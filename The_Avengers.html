@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The_Avengers</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="js.js"></script>
+</head>
+<body>
+	<div id="mainWrapper">
+		<img src="bckg.png" id="bckg" alt="">
+		<img src="smoke2.png" id="smoke2" alt="" class="smoke">
+		<img src="capAmerica.png" id="capAmerica" alt="">
+		<img src="blackWidow.png" id="blackWidow" alt="">
+		<img src="frontBckg1.png" id="frontBckg1" alt="">
+		<img src="hulk.png" id="hulk" alt="">
+		<img src="car.png" id="car" alt="">
+		<img src="nickFury.png" id="nickFury" alt="">
+		<img src="frontBckg1.png" id="frontBckg2" alt="">
+		<img src="hawk.png" id="hawk" alt="">
+		<img src="smoke1.png" id="smoke1" alt="" class="smoke">
+		<div id="torBox">
+			<img src="tor.png" id="tor" alt="">
+			<img src="torsHand.png" id="torsHand" alt=""></div>
+		<img src="embers1.png" id="embers1" class="ember" alt="">
+		<img src="embers1.png" id="embers3" class="ember" alt="">
+		<img src="embers1.png" id="embers4" class="ember" alt="">
+		<div id="ironManBox">
+			<img src="ironMan.png" id="ironMan" alt="">
+			<img src="handLight.png" id="handLight" alt=""></div>
+		<img src="frontBckg.png" id="frontBckg">
+		<img src="embers2.png" id="embers2" class="ember" alt=""></div>
+	<div id="rightSidebar">
+		<div id="closeButton"><img src="close-button.png" alt="" width="40px"></div>
+		<p>
+			Амплитуда
+			<br>
+			<input type="range" min="0" max="20" step="1" value="0" class="range rangeten" onchange="assignedRange()"></p>
+		<p>
+			Угол
+			<br>
+			<input type="range" min="0" max="30" step="1" value="0" class="angle rangeten" onchange="assignedAngle()"></p>
+		<p>
+			Перспектива
+			<br>
+			<input type="range" min="0" max="30" step="1" value="0" class="perspective rangeten" onchange="assignedPerspective()"></p>
+		<p>
+			<label for="checkbox1">Анимация дыма</label>
+			<input type="range" min="0" max="10" step="1" value="0" id="range1" class="speedAnim rangeten" onchange="assignedSpeedAnim (event, 'img.smoke')"></p>
+		<p>
+			<label for="checkbox2">Анимация искор</label>
+			<input type="range" min="0" max="10" step="1" value="0" class="speedAnim rangeten" onchange="assignedSpeedAnim (event, 'img.ember')"></p>
+		<p>
+			<label for="checkbox3">Анимация IronMan</label>
+			<input type="range" min="0" max="10" step="1" value="0" class="speedAnim rangeten" onchange="assignedSpeedAnim (event, '#handLight')"></p>
+		<p>
+			<label for="checkbox3">Анимация Tor</label>
+			<input type="range" min="0" max="10" step="1" value="0" class="speedAnim rangeten" onchange="assignedSpeedAnim (event, '#torsHand')"></p>
+	</div>
+</body>
+</html>
